@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogAn", "LogAn.csproj", "{19BABCFC-5DA0-4E18-AD75-FD0C56ECC101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogAn.UnitTests", "..\LogAn.UnitTests\LogAn.UnitTests.csproj", "{28D0CF64-CC00-441E-91E2-32B7A4BE9214}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19BABCFC-5DA0-4E18-AD75-FD0C56ECC101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19BABCFC-5DA0-4E18-AD75-FD0C56ECC101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19BABCFC-5DA0-4E18-AD75-FD0C56ECC101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19BABCFC-5DA0-4E18-AD75-FD0C56ECC101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D0CF64-CC00-441E-91E2-32B7A4BE9214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D0CF64-CC00-441E-91E2-32B7A4BE9214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D0CF64-CC00-441E-91E2-32B7A4BE9214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D0CF64-CC00-441E-91E2-32B7A4BE9214}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5B85BE2-A90C-47D2-B531-1DF2795B00EC}
+	EndGlobalSection
+EndGlobal
