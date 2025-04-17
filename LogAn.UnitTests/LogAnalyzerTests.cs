@@ -13,6 +13,14 @@ namespace LogAn.UnitTests
         }
 
         [Test]
+        public void IsValidFileName_WhenCalled_ChangesWasLastFileNameValid()
+        {
+            LogAnalyzer la = MakeAnalyzer();
+            var result = la.IsValidLogFileName("badname.foo");
+            Assert.That(result, Is.False);
+        }
+
+        [Test]
         [Ignore("В этом тесте имеется ошибка")]
         public void IsValidFileName_ValideFile_ReturnsTrue()
         {
