@@ -7,18 +7,32 @@ namespace LogAn.UnitTests
     [TestFixture]
     public class LogAnalyzerTests
     {
+
+
+
         private LogAnalyzer MakeAnalyzer()
         {
             return new LogAnalyzer();
         }
 
+        [Test]
+        public void IsValidFileName_NameSupportedExtension_ReturnsTrue()
+        {
+            FakeExtensionManager myFakeManager = new FakeExtensionManager();
+            myFakeManager.WillBeValid = true;
+            LogAnalyzer log = new LogAnalyzer(myFakeManager);
+            bool result = log.IsValidLogFileName2("short.ext");
+            Assert.That(result,Is.True);
+        }
+
+
         [TestCase("badfile.foo", false)]
         [TestCase("goodfile.slf", true)]
-        public void IsValidFileName_WhenCalled_ChangesWasLastFileNameValid(string file,bool expected)
+        public void IsValidFileName_WhenCalled_ChangesWasLastFileNameValid(string file, bool expected)
         {
             LogAnalyzer la = MakeAnalyzer();
             var result = la.IsValidLogFileName(file);
-           // Assert.AreEqual(expected, la.WasLastFileNameValid);
+            // Assert.AreEqual(expected, la.WasLastFileNameValid);
             Assert.That(result, Is.EqualTo(expected));
         }
 
